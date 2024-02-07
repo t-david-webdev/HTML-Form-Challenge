@@ -7,9 +7,9 @@
 </head>
 <body>
     
-<main>
+<main style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
 
-    <h1>Thank you for joining us for a session at Code Labs Academy!</h1>
+    <h1 style="text-align: center;">Thank you for joining us for a session at Code Labs Academy!</h1>
 
     <form action="">
         
@@ -27,6 +27,26 @@
         <div style="display: flex; flex-direction: column;">
             <p>Please mention any topics you would like to ask further questions or gather more information on.</p>
             <textarea name="" id="" cols="20" rows="10"></textarea>
+        </div>
+
+        <div style="justify-content: center; display: flex; margin-top: 10px;">
+            Do you study at home?
+            <input type="radio" id="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no">
+            <label for="no">No</label>
+        </div>
+
+        <div  style="justify-content: center; display: flex; margin-top: 10px; flex-direction: column;">
+            Why are you seeking more information on these topics?
+            <div style="display: flex; justify-content: space-between;">
+            <input type="checkbox" id="depth" style="display: inline-block;">
+            <label for="depth">I am intrested in a more in depth discution</label>
+            <input type="checkbox" id="didnt">
+            <label for="didnt">I didn`t understand it in the session</label>
+            <input type="checkbox" id="phone">
+            <label for="phone">Phone apps</label>
+        </div>
         </div>
 
     </form>
